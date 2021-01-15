@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks | Xiaosen Wang</title>
+    <link>https://xiaosen-wang.github.io/talks/</link>
+      <atom:link href="https://xiaosen-wang.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
+    <description>Talks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Jan 2021 19:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xiaosen-wang.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Talks</title>
+      <link>https://xiaosen-wang.github.io/talks/</link>
+    </image>
+    
+    <item>
+      <title>Adversarial Training in Textual Adversarial Attack and Defense</title>
+      <link>https://xiaosen-wang.github.io/talks/2021-01-12/</link>
+      <pubDate>Tue, 12 Jan 2021 19:00:00 +0000</pubDate>
+      <guid>https://xiaosen-wang.github.io/talks/2021-01-12/</guid>
+      <description>&lt;p&gt;Adversarial training is the most empirically successful approach in improving the robustness of deep neural networks for image classification.For text classification, however, existing synonym substitution based adversarial attacks are effective but not efficient to be incorporated into practical text adversarial training. Gradient-based attacks, which are very efficient for images, are hard to be implemented for synonym substitution based text attacks due to the lexical, grammatical and semantic constraints and the discrete text input space. Thereby, we propose a fast text adversarial attack method called Fast Gradient Projection Method (FGPM) based on synonym substitution, which is about 20 times faster than existing text attack methods and could achieve similar attack performance. We then incorporate FGPM with adversarial training and propose a text defense method called Adversarial Training with FGPM enhanced by Logit pairing (ATFL). Experiments show that ATFL could significantly improve the model robustness and block the transferability of adversarial examples.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Generative Adversarial Nets</title>
+      <link>https://xiaosen-wang.github.io/talks/2019-7-25/</link>
+      <pubDate>Thu, 25 Jul 2019 14:00:00 +0000</pubDate>
+      <guid>https://xiaosen-wang.github.io/talks/2019-7-25/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vulnerability Detection for Android Applications</title>
+      <link>https://xiaosen-wang.github.io/talks/2017-11-24/</link>
+      <pubDate>Fri, 24 Nov 2017 14:00:00 +0000</pubDate>
+      <guid>https://xiaosen-wang.github.io/talks/2017-11-24/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
