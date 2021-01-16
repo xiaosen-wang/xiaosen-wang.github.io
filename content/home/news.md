@@ -42,7 +42,7 @@ design:
 
 + 12/25/2020 – I was invited to give a talk of my [paper](publication/atfl/) by [biendata](https://www.biendata.xyz/) and [paperweekly](https://www.paperweekly.site/).
 
-+ 12/2/2020 – One paper was been accepted by **AAAI 2021**.
++ 12/2/2020 – One paper was accepted by **AAAI 2021**.
 
 + 7/9/2020 – We implemented our [IGA attack](https://arxiv.org/abs/1909.06723) in [TextAttack](https://github.com/QData/TextAttack).
 

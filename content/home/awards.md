@@ -39,8 +39,8 @@ design:
   #   4 = Citation (publication only)
   view: 1
 ---
-* **Shenzhen Stock Exchange Scholarship**, HUST, 2020.9. (Only one student in CS, HUST is awarded by [Shenzhen Stock Exchange](http://www.szse.cn/English/) each year.)
-* **The CCF Elite Collegiate Award**, CCF 2018, 10. (Only 3 students in HUST are awarded by [China Computer Federation](https://www.ccf.org.cn/en/) each year.)
-* **National Scholarship of China**, HUST, 2018, 9.
-* **National Endeavor Scholarship of China**, HUST, 2016, 9.
+* **Shenzhen Stock Exchange Scholarship**, HUST, Sep. 2020. (Only one student in CS, HUST is awarded by [Shenzhen Stock Exchange](http://www.szse.cn/English/) each year.)
+* **The CCF Elite Collegiate Award**, CCF, Oct. 2018. (Only 3 students in HUST are awarded by [China Computer Federation](https://www.ccf.org.cn/en/) each year.)
+* **National Scholarship of China**, HUST, Sep. 2018.
+* **National Endeavor Scholarship of China**, HUST, Sep. 2016.
 
