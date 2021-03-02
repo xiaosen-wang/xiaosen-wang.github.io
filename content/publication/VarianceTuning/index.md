@@ -30,7 +30,7 @@ summary: Adversarial Attacks and Defenses for Images.
 links:
 # - name: Custom Link
 #   url: http://example.org
-url_pdf: publication/VarianceTuning/VT.pdf
+url_pdf: publication/variancetuning/VT.pdf
 # url_code: https://github.com/xiaosen-wang/SEM
 # url_dataset: '#'
 # url_poster: publication/ATFL/ATFL_poster.pdf
