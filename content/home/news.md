@@ -39,11 +39,15 @@ design:
   #   4 = Citation (publication only)
   view: 1
 ---
-+ 03/01/2021 – One paper was accepted by **CVPR 2021**.
++ 04/19/2021 - I was invited as a **reviewer** for [EMNLP 2021](https://2021.emnlp.org/).
+
++ 04/15/2021 - I was admitted into Tencent Rhino Bird Elite Talent Training Program. 
+
++ 03/01/2021 – One paper was accepted by [CVPR 2021](http://cvpr2021.thecvf.com/).
 
 + 12/25/2020 – I was invited to give a talk of my [paper](publication/atfl/) by [biendata](https://www.biendata.xyz/) and [paperweekly](https://www.paperweekly.site/).
 
-+ 12/02/2020 – One paper was accepted by **AAAI 2021**.
++ 12/02/2020 – One paper was accepted by [AAAI 2021](https://aaai.org/Conferences/AAAI-21/).
 
 + 07/09/2020 – We implemented our [IGA attack](https://arxiv.org/abs/1909.06723) in [TextAttack](https://github.com/QData/TextAttack).
 
