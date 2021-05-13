@@ -39,6 +39,8 @@ design:
   #   4 = Citation (publication only)
   view: 1
 ---
++ 05/12/2021 - One paper was accepted by [UAI 2021](https://auai.org/uai2021/).
+
 + 04/19/2021 - I was invited as a **reviewer** for [EMNLP 2021](https://2021.emnlp.org/).
 
 + 04/15/2021 - I was admitted into Tencent Rhino Bird Elite Talent Training Program. 

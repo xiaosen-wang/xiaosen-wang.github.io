@@ -3,24 +3,25 @@ title: "Natural Language Adversarial Attacks and Defenses in Word Level"
 authors:
 - admin
 - Hao Jin
+- Yichen Yang
 - Kun He
-date: "2019-09-15T00:00:00Z"
+date: "2021-05-12T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2019-09-15T00:00:00Z"
+publishDate: 2021-05-12T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: In *arXiv preprint arXiv:1909.06723*
+publication: In Conference on Uncertainty in Artificial Intelligence (UAI)
 # publication_short: In *AAAI*
 
-abstract: In recent years, inspired by a mass of researches on adversarial examples for computer vision, there has been a growing interest in designing adversarial attacks for Natural Language Processing (NLP) tasks, followed by very few works of adversarial defenses for NLP. To our knowledge, there exists no defense method against the successful synonym substitution based attacks that aim to satisfy all the lexical, grammatical, semantic constraints and thus are hard to be perceived by humans. We contribute to fill this gap and propose a novel adversarial defense method called **Synonym Encoding Method** (SEM), which inserts an encoder before the input layer of the model and then trains the model to eliminate adversarial perturbations. Extensive experiments demonstrate that SEM can efficiently defend current best synonym substitution based adversarial attacks with little decay on the accuracy for benign examples. To better evaluate SEM, we also design a strong attack method called Improved Genetic Algorithm (IGA) that adopts the genetic metaheuristic for synonym substitution based attacks. Compared with the first genetic based adversarial attack proposed in 2018, IGA can achieve higher attack success rate with lower word substitution rate, at the same time maintain the transferability of adversarial examples.
+abstract: In the area of natural language processing, deep learning models are recently known to be vulnerable to various types of adversarial perturbations, however, relatively few works are done on the defense side. Especially, there exists little effective defense method against the successful synonym substitution based attacks that preserve the syntactic structure and semantic information of the original text while fooling the deep learning models. We contribute in this direction and propose a novel adversarial defense method called *Synonym Encoding Method* (SEM). Specifically, SEM inserts an encoder before the input layer of the target model to map each cluster of synonyms to a unique encoding and trains the model to eliminate possible adversarial perturbations without modifying the network architecture or adding extra data. Extensive experiments demonstrate that SEM can effectively defend the current synonym substitution based attacks and block the transferability of adversarial examples. SEM is also easy and efficient to be scaled to large models and big datasets.
 # Summary. An optional shortened abstract.
 summary: Adversarial Attacks and Defenses for Texts.
 
