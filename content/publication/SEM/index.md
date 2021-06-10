@@ -1,5 +1,5 @@
 ---
-title: "Natural Language Adversarial Attacks and Defenses in Word Level"
+title: "Natural Language Adversarial Defense through Synonym Encoding"
 authors:
 - admin
 - Hao Jin
@@ -36,9 +36,9 @@ links:
 url_pdf: https://arxiv.org/abs/1909.06723
 url_code: https://github.com/xiaosen-wang/SEM
 # url_dataset: '#'
-# url_poster: publication/ATFL/ATFL_poster.pdf
+url_poster: publication/sem/SEM_poster.pdf
 # url_project: ''
-# url_slides: publication/ATFL/ATFL_slides.pdf
+url_slides: publication/sem/SEM_slides.pdf
 # url_source: '#'
 # url_video: '#'
 

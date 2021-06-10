@@ -33,7 +33,7 @@ links:
 url_pdf: https://arxiv.org/abs/2103.15571
 url_code: https://github.com/JHL-HUST/VT
 # url_dataset: '#'
-# url_poster: publication/ATFL/ATFL_poster.pdf
+url_poster: publication/variancetuning/VT_poster.pdf
 # url_project: ''
 # url_slides: publication/ATFL/ATFL_slides.pdf
 # url_source: '#'
