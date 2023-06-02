@@ -8,8 +8,81 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="bookmark" href="favicon.ico" type="image/x-icon"　/>
 <title>Xiaosen Wang</title>
+<style>
+  /* for bib file */
+  .content {
+    display: none;
+  }
+  .btn {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: #224B83;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .btn:hover,
+  .btn:active {
+    color: #0056b3;
+  }
+
+  .btn:focus {
+    outline: none;
+  }
+
+  .shadow-block {
+    box-shadow: 0 2px 4px rgba(39, 38, 38, 0.5);
+    padding: 10px;
+  }
+
+  /* tag */
+  .imageattack {
+    background-color: #2ECC71;
+    color: white;
+    padding: 3px;
+    border-radius: 8px;
+  }
+
+  .imagedefense {
+    background-color: #3498D8;
+    color: white;
+    padding: 3px;
+    border-radius: 8px;
+  }
+
+  .textattack {
+    background-color: #B07CC6;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+  }
+
+  .textdefense {
+    background-color: #F1C60F;
+    color: white;
+    padding: 3px;
+    border-radius: 8px;
+  }
+
+  
+</style>
 </head>
 <body>
+
+<script>
+  function toggleContent(contentId) {
+    var content = document.getElementById(contentId);
+    if (content.style.display === "none") {
+      content.style.display = "block";
+    } else {
+      content.style.display = "none";
+    }
+  }
+</script>
+
+
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-content">
@@ -67,25 +140,48 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> Improving the Transferability of Adversarial Samples by Path-Augmented Method
-      </strong><br />
+      </strong> <span class="imageattack">Image Attack</span> <br />
        Jianping Zhang, Jen-tse Huang, Wenxuan Wang, Yichen Li, Weibin Wu, <strong>Xiaosen Wang</strong>, Yuxin Su, Michael Lyu<br /> 
        IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>), 2023 <br />
        <a href="https://arxiv.org/abs/2303.15735"  target="_blank" rel="noopener noreferrer">[arXiv]</a>
-    </p>
+    <button onclick="toggleContent('PAM')" class="btn">[BibTex]</button>
+      <div id="PAM" class="content" style="display: none;">
+        <p class="shadow-block">
+          @inproceedings{zhang2023improving,<br /> 
+            &nbsp&nbsp&nbsp&nbsp title={{Improving the Transferability of Adversarial Samples by Path-Augmented Method}},<br /> 
+            &nbsp&nbsp&nbsp&nbsp author={Jianping Zhang and Jen-tse Huang and Wenxuan Wang and Yichen Li and Weibin Wu and Xiaosen Wang and Yuxin Su and Michael R. Lyu},<br /> 
+            &nbsp&nbsp&nbsp&nbsp booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},<br /> 
+            &nbsp&nbsp&nbsp&nbsp pages={8173-8182},<br /> 
+            &nbsp&nbsp&nbsp&nbsp year={2023}<br /> 
+          }
+        </p>
+      </div>
   </div>
 </div>
 
 <div class="media">
   <div class="media-body">
     <p class="media-heading">
-      <strong> TextHacker: Learning based Hybrid Local Search Algorithm for Text Hard-label Adversarial Attack
-      </strong><br />
+      <strong> TextHacker: Learning based Hybrid Local Search Algorithm for Text Hard-label Adversarial Attack 
+      </strong> <span class="textattack">Textual Attack</span> <br />
        Zhen Yu*, <strong>Xiaosen Wang</strong>*, Wanxiang Che, Kun He<br /> 
        Findings of Conference on Empirical Methods in Natural Language Processing (<strong>EMNLP findings</strong>), 2022 <br />
       <a href="https://arxiv.org/abs/2201.08193"  target="_blank" rel="noopener noreferrer">[arXiv]</a>
 	    <a href="https://github.com/JHL-HUST/TextHacker" target="_blank" rel="noopener noreferrer">[Code]</a>
       <a href="./files/texthacker/TextHacker_poster.pdf" target="_blank">[Poster]</a>
-      <a href="./files/texthacker/TextHacker_slides.pdf" target="_blank">[Slides]</a> <br />
+      <a href="./files/texthacker/TextHacker_slides.pdf" target="_blank">[Slides]</a>
+      <button onclick="toggleContent('TextHacker')" class="btn">[BibTex]</button>
+      <div id="TextHacker" class="content" style="display: none;">
+        <p class="shadow-block">
+          @inproceedings{yu2022texthacker,<br /> 
+            &nbsp&nbsp&nbsp&nbsp title={{TextHacker: Learning based Hybrid Local Search Algorithm for Text Hard-label Adversarial Attack}},<br /> 
+            &nbsp&nbsp&nbsp&nbsp author={Zhen Yu and Xiaosen Wang and Wanxiang Che and Kun He},<br /> 
+            &nbsp&nbsp&nbsp&nbsp booktitle={Proceedings of the Conference on Empirical Methods in Natural Language Processing (Findings)},<br /> 
+            &nbsp&nbsp&nbsp&nbsp pages={622–637},<br /> 
+            &nbsp&nbsp&nbsp&nbsp year={2022}<br /> 
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -94,13 +190,25 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> Triangle Attack: A Query-efficient Decision-based Adversarial Attack
-      </strong><br />
+      </strong> <span class="imageattack">Image Attack</span> <br />
        <strong>Xiaosen Wang</strong>, Zeliang Zhang, Kangheng Tong, Dihong Gong, Kun He, Zhifeng Li, Wei Liu<br /> 
        European Conference on Computer Vision (<strong>ECCV</strong>), 2022 <br />
       <a href="https://arxiv.org/abs/2112.06569" target="_blank" rel="noopener noreferrer">[arXiv]</a>
 	    <a href="https://github.com/xiaosen-wang/TA" target="_blank" rel="noopener noreferrer">[Code]</a>
       <a href="./files/ta/ta_poster.pdf" target="_blank">[Poster]</a>
-      <a href="./files/ta/ta_slides.pdf" target="_blank">[Slides]</a> <br />
+      <a href="./files/ta/ta_slides.pdf" target="_blank">[Slides]</a>
+      <button onclick="toggleContent('TA')" class="btn">[BibTex]</button>
+      <div id="TA" class="content" style="display: none;">
+        <p class="shadow-block">
+          @inproceedings{wang2022triangle,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{Triangle Attack: A Query-efficient Decision-based Adversarial Attack}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Xiaosen Wang and Zeliang Zhang and Kangheng Tong and Dihong Gong and Kun He and Zhifeng Li and Wei Liu},<br />
+            &nbsp&nbsp&nbsp&nbsp booktitle={Proceedings of the European Conference on Computer Vision},<br />
+            &nbsp&nbsp&nbsp&nbsp pages={156--174},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2022}<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -109,12 +217,24 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> Detecting Textual Adversarial Examples through Randomized Substitution and Vote
-      </strong><br />
+      </strong> <span class="textdefense">Textual Defense</span> <br />
        <strong>Xiaosen Wang</strong>*, Yifeng Xiong*, Kun He<br /> 
        Conference on Uncertainty in Artificial Intelligence (<strong>UAI</strong>), 2022 <br />
       <a href="https://arxiv.org/abs/2109.05698" target="_blank" rel="noopener noreferrer">[arXiv]</a>
 	    <a href="https://github.com/JHL-HUST/RSV" target="_blank" rel="noopener noreferrer">[Code]</a> 
-      <a href="./files/rsv/RSV_poster.pdf" target="_blank">[Poster]</a><br />
+      <a href="./files/rsv/RSV_poster.pdf" target="_blank">[Poster]</a>
+      <button onclick="toggleContent('RSV')" class="btn">[BibTex]</button>
+      <div id="RSV" class="content" style="display: none;">
+        <p class="shadow-block">
+          @inproceedings{wang2022detecting,<br />
+            &nbsp&nbsp&nbsp&nbsp title={Detecting textual adversarial examples through randomized substitution and vote},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Wang, Xiaosen and Yifeng, Xiong and He, Kun},<br />
+            &nbsp&nbsp&nbsp&nbsp booktitle={Proceedings of the Conference on Uncertainty in Artificial Intelligence},<br />
+            &nbsp&nbsp&nbsp&nbsp pages={2056--2065},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2022},<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -123,12 +243,24 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> Robust Textual Embedding against Word-level Adversarial Attacks
-      </strong><br />
+      </strong> <span class="textdefense">Textual Defense</span> <br />
        Yichen Yang*, <strong>Xiaosen Wang</strong>*, Kun He<br /> 
        Conference on Uncertainty in Artificial Intelligence (<strong>UAI</strong>), 2022 <br />
       <a href="https://arxiv.org/abs/2202.13817" target="_blank" rel="noopener noreferrer">[arXiv]</a>
 	    <a href="https://github.com/JHL-HUST/FTML" target="_blank" rel="noopener noreferrer">[Code]</a>
-      <a href="./files/ftml/ftml_poster.pdf" target="_blank">[Poster]</a><br />
+      <a href="./files/ftml/ftml_poster.pdf" target="_blank">[Poster]</a>
+      <button onclick="toggleContent('FTML')" class="btn">[BibTex]</button>
+      <div id="FTML" class="content" style="display: none;">
+        <p class="shadow-block">
+          @inproceedings{yang2022robust,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{Robust Textual Embedding against Word-level Adversarial Attacks}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Yichen Yang and Xiaosen Wang and Kun He},<br />
+            &nbsp&nbsp&nbsp&nbsp booktitle={Proceedings of the Conference on Uncertainty in Artificial Intelligence},<br />
+            &nbsp&nbsp&nbsp&nbsp pages={2214–2224},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2022},<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -137,11 +269,22 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> Boosting Adversarial Transferability through Enhanced Momentum
-      </strong><br />
+      </strong> <span class="imageattack">Image Attack</span> <br />
        <strong>Xiaosen Wang</strong>*, Jiadong Lin*, Han Hu, Jingdong Wang, Kun He<br /> 
        British Machine Vision Conference (<strong>BMVC</strong>), 2021 <br />
       <a href="https://arxiv.org/abs/2103.10609" target="_blank" rel="noopener noreferrer">[arXiv]</a>
-	    <a href="https://github.com/JHL-HUST/EMI" target="_blank" rel="noopener noreferrer">[Code]</a> <br />
+	    <a href="https://github.com/JHL-HUST/EMI" target="_blank" rel="noopener noreferrer">[Code]</a> 
+      <button onclick="toggleContent('EMI')" class="btn">[BibTex]</button>
+      <div id="EMI" class="content" style="display: none;">
+        <p class="shadow-block">
+          @inproceedings{wang2021boosting,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{Boosting Adversarial Transferability through Enhanced Momentum}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Xiaosen Wang and Jiadong Lin and Han Hu and Jingdong Wang and Kun He},<br />
+            &nbsp&nbsp&nbsp&nbsp booktitle={Proceedings of the British Machine Vision Conference},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2021},<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -150,14 +293,25 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> Admix: Enhancing the Transferability of Adversarial Attacks
-      </strong><br />
+      </strong> <span class="imageattack">Image Attack</span> <br />
        <strong>Xiaosen Wang</strong>, Xuanran He, Jingdong Wang, Kun He<br /> 
        International Conference on Computer Vision (<strong>ICCV</strong>), 2021 <br />
       <a href="https://arxiv.org/abs/2102.00436" target="_blank" rel="noopener noreferrer">[arXiv]</a>
 	    <a href="https://github.com/JHL-HUST/Admix" target="_blank" rel="noopener noreferrer">[Code]</a>
       <a href="./files/admix/Admix_poster.pdf" target="_blank">[Poster]</a>
       <a href="./files/admix/Admix_slides.pdf" target="_blank">[Slides]</a>
-      <br />
+      <button onclick="toggleContent('admix')" class="btn">[BibTex]</button>
+      <div id="admix" class="content" style="display: none;">
+        <p class="shadow-block">
+          @inproceedings{wang2021admix,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{Admix: Enhancing the Transferability of Adversarial Attacks}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Xiaosen Wang and Xuanran He and Jingdong Wang and Kun He},<br />
+            &nbsp&nbsp&nbsp&nbsp booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},<br />
+            &nbsp&nbsp&nbsp&nbsp pages={16158-16167},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2021},<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -166,14 +320,25 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> Natural Language Adversarial Defense through Synonym Encoding
-      </strong><br />
+      </strong> <span class="textdefense">Textual Defense</span> <br />
        <strong>Xiaosen Wang</strong>, Hao Jin, Yichen Yang, Kun He<br /> 
        Conference on Uncertainty in Artificial Intelligence (<strong>UAI</strong>), 2021 <br />
       <a href="https://arxiv.org/abs/1909.06723" target="_blank" rel="noopener noreferrer">[arXiv]</a>
 	    <a href="https://github.com/xiaosen-wang/SEM" target="_blank" rel="noopener noreferrer">[Code]</a>
       <a href="./files/sem/SEM_poster.pdf" target="_blank">[Poster]</a>
       <a href="./files/sem/SEM_slides.pdf" target="_blank">[Slides]</a>
-      <br />
+      <button onclick="toggleContent('SEM')" class="btn">[BibTex]</button>
+      <div id="SEM" class="content" style="display: none;">
+        <p class="shadow-block">
+          @inproceedings{wang2021enhancing,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{Natural Language Adversarial Defense through Synonym Encoding}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Xiaosen Wang and Hao Jin and Yichen Yang and Kun He},<br />
+            &nbsp&nbsp&nbsp&nbsp booktitle={Proceedings of the Conference on Uncertainty in Artificial Intelligence},<br />
+            &nbsp&nbsp&nbsp&nbsp pages={823-833},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2021}<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -182,14 +347,25 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> Enhancing the Transferability of Adversarial Attacks through Variance Tuning
-      </strong><br />
+      </strong> <span class="imageattack">Image Attack</span> <br />
        <strong>Xiaosen Wang</strong>, Kun He<br /> 
        IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>), 2021 <br />
        <a href="https://arxiv.org/abs/2103.15571" target="_blank" rel="noopener noreferrer">[arXiv]</a>
        <a href="https://github.com/JHL-HUST/VT" target="_blank" rel="noopener noreferrer">[Code]</a>
        <a href="./files/vt/VT_poster.pdf" target="_blank">[Poster]</a>
        <a href="./files/vt/VT_slides.pdf" target="_blank">[Slides]</a>
-       <br />
+       <button onclick="toggleContent('VMI')" class="btn">[BibTex]</button>
+      <div id="VMI" class="content" style="display: none;">
+        <p class="shadow-block">
+          @inproceedings{wang2021enhancing,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{Enhancing the Transferability of Adversarial Attacks through Variance Tuning}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Xiaosen Wang and Kun He},<br />
+            &nbsp&nbsp&nbsp&nbsp booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},<br />
+            &nbsp&nbsp&nbsp&nbsp pages={1924-1933},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2021}<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -198,14 +374,25 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> Adversarial Training with Fast Gradient Projection Method against Synonym Substitution based Text Attacks
-      </strong><br />
+      </strong> <span class="textdefense">Textual Defense</span> <br />
        <strong>Xiaosen Wang</strong>*, Yichen Yang*, Yihe Deng*, Kun He<br /> 
        AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>), 2021 <br />
       <a href="https://arxiv.org/abs/2008.03709" target="_blank" rel="noopener noreferrer">[arXiv]</a>
       <a href="https://github.com/JHL-HUST/FGPM" target="_blank" rel="noopener noreferrer">[Code]</a> 
       <a href="./files/atfl/ATFL_poster.pdf" target="_blank">[Poster]</a>
       <a href="./files/atfl/ATFL_slides.pdf" target="_blank">[Slides]</a>
-      <br />
+      <button onclick="toggleContent('FGPM')" class="btn">[BibTex]</button>
+      <div id="FGPM" class="content" style="display: none;">
+        <p class="shadow-block">
+          @inproceedings{wang2021adversarial,<br /> 
+            &nbsp&nbsp&nbsp&nbsp title={{Adversarial Training with Fast Gradient Projection Method against Synonym Substitution based Text Attacks}},<br /> 
+            &nbsp&nbsp&nbsp&nbsp author={Xiaosen Wang and Yichen Yang and Yihe Deng and Kun He},<br /> 
+            &nbsp&nbsp&nbsp&nbsp booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},<br /> 
+            &nbsp&nbsp&nbsp&nbsp pages={13997-14005},<br /> 
+            &nbsp&nbsp&nbsp&nbsp year={2021}<br /> 
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -218,6 +405,20 @@
       Kun He, Wu Wang, <strong>Xiaosen Wang</strong>†, John E. Hopcroft<br /> 
       WIREs Data Mining and Knowledge Discovery <br />
       <a href="https://arxiv.org/abs/1905.06109" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      <button onclick="toggleContent('anchor')" class="btn">[BibTex]</button>
+      <div id="anchor" class="content" style="display: none;">
+        <p class="shadow-block">
+          @article{he2019a,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{A New Anchor Word Selection Method for the Separable Topic Discovery}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Kun He and Wu Wang and Xiaosen Wang and John E. Hopcroft},<br />
+            &nbsp&nbsp&nbsp&nbsp journal={Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery},<br />
+            &nbsp&nbsp&nbsp&nbsp volume={9},<br />
+            &nbsp&nbsp&nbsp&nbsp number={5},<br />
+            &nbsp&nbsp&nbsp&nbsp pages={e1313}<br />
+            &nbsp&nbsp&nbsp&nbsp year={2019},<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -231,10 +432,21 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> Diversifying the High-level Features for better Adversarial Transferability
-      </strong><br />
+      </strong> <span class="imageattack">Image Attack</span> <br />
       Zhiyuan Wang, Zeliang Zhang, Siyuan Liang, <strong>Xiaosen Wang</strong>† <br /> 
        arXiv preprint arXiv:2304.10136, 2023 <br />
       <a href="https://arxiv.org/abs/2304.10136" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      <button onclick="toggleContent('DHF')" class="btn">[BibTex]</button>
+      <div id="DHF" class="content" style="display: none;">
+        <p class="shadow-block">
+          @article{Wang2023diversifying,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{Diversifying the High-level Features for better Adversarial Transferability}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Zhiyuan Wang and Zeliang Zhang and Siyuan Liang and Xiaosen Wang},<br />
+            &nbsp&nbsp&nbsp&nbsp journal={arXiv preprint arXiv:2304.10136},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2023},<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -243,10 +455,21 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> Improving Adversarial Transferability with Scheduled Step Size and Dual Example
-      </strong><br />
+      </strong> <span class="imageattack">Image Attack</span> <br />
        Zeliang Zhang, Peihan Liu, <strong>Xiaosen Wang</strong>†, Chenliang Xu†<br /> 
        arXiv preprint arXiv:62301.12968, 2023 <br />
       <a href="https://arxiv.org/abs/2301.12968" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      <button onclick="toggleContent('stepsize')" class="btn">[BibTex]</button>
+      <div id="stepsize" class="content" style="display: none;">
+        <p class="shadow-block">
+          @article{zhang2023improving,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{Improving Adversarial Transferability with Scheduled Step Size and Dual Example}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Zeliang Zhang and Peihan Liu and Xiaosen Wang and Chenliang Xu},<br />
+            &nbsp&nbsp&nbsp&nbsp journal={arXiv preprint arXiv:62301.12968},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2023},<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -255,10 +478,21 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> I-PGD-AT: Efficient Adversarial Training via Imitating Iterative PGD Attack
-      </strong><br />
+      </strong> <span class="imagedefense">Image Defense</span> <br />
        <strong>Xiaosen Wang</strong>, Bhavya Kailkhura, Krishnaram Kenthapadi, Bo Li<br /> 
        OpenReview: TEt7PsVZux6, 2021 <br />
       <a href="https://openreview.net/forum?id=TEt7PsVZux6" target="_blank" rel="noopener noreferrer">[pdf]</a>
+      <button onclick="toggleContent('ipgdat')" class="btn">[BibTex]</button>
+      <div id="ipgdat" class="content" style="display: none;">
+        <p class="shadow-block">
+          @article{wang2021ipgdat,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{I-PGD-AT: Efficient Adversarial Training via Imitating Iterative PGD Attack}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Xiaosen Wang and Bhavya Kailkhura and Krishnaram Kenthapadi and Bo Li},<br />
+            &nbsp&nbsp&nbsp&nbsp journal={OpenReview: TEt7PsVZux6},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2021},<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -267,10 +501,21 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> Multi-stage Optimization based Adversarial Training
-      </strong><br />
+      </strong> <span class="imagedefense">Image Defense</span> <br />
        <strong>Xiaosen Wang</strong>, Chuanbiao Song, Kun He, Liwei Wang<br /> 
        arXiv preprint arXiv:2106.15357, 2021 <br />
       <a href="https://arxiv.org/abs/2106.15357" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      <button onclick="toggleContent('MOAT')" class="btn">[BibTex]</button>
+      <div id="MOAT" class="content" style="display: none;">
+        <p class="shadow-block">
+          @article{wang2021multi,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{Multi-stage Optimization based Adversarial Training}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Xiaosen Wang and Chuanbiao Song and Kun He and Liwei Wang},<br />
+            &nbsp&nbsp&nbsp&nbsp journal={arXiv preprint arXiv:2106.15357},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2021},<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -279,10 +524,21 @@
   <div class="media-body">
     <p class="media-heading">
       <strong> AT-GAN: A Generative Attack Model for Adversarial Transferring on Generative Adversarial Nets
-      </strong><br />
+      </strong> <span class="imageattack">Image Attack</span> <br />
        <strong>Xiaosen Wang</strong>, Kun He, Chuanbiao Song, Liwei Wang, John E. Hopcroft<br /> 
        arXiv preprint arXiv:1904.07793, 2019 <br />
       <a href="https://arxiv.org/abs/1904.07793" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      <button onclick="toggleContent('atgan')" class="btn">[BibTex]</button>
+      <div id="atgan" class="content" style="display: none;">
+        <p class="shadow-block">
+          @article{wang2019atgan,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{AT-GAN: A Generative Attack Model for Adversarial Transferring on Generative Adversarial Nets}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Xiaosen Wang and Kun He and Chuanbiao Song and Liwei Wang and John E. Hopcroft},<br />
+            &nbsp&nbsp&nbsp&nbsp journal={arXiv preprint arXiv:1904.07793},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2019},<br />
+          }
+        </p>
+      </div>
     </p>
   </div>
 </div>
@@ -293,7 +549,7 @@
 <div class="media">
   <div class="media-body">
     <p class="media-heading">
-      <strong> Adversarial Training in Textual Adversarial Attack and Defense
+      <strong> Adversarial Training in Textual Adversarial Attack and Defense 
       </strong><a href="https://www.bilibili.com/video/BV1Pv41147bp/?from=search&seid=2336547234866323090" target="_blank" rel="noopener noreferrer">[link]</a><br />
       AI Drive Organized by Biendata and Paperweekly. Jan 12, 2021
     </p>
@@ -331,7 +587,7 @@
 </h2>
 <ul>
   <li><strong>Conference Reviewer</strong>: ICML, NeurIPS, CVPR, ICCV, ECCV, EMNLP, UAI, ICME, BMVC</li>
-  <li><strong>Journal Reviewer</strong>: TCSVT, TNNLS, Neurocomputing, Pattern Recognition</li>
+  <li><strong>Journal Reviewer</strong>: TIFS, TCSVT, TNNLS, Neurocomputing, Pattern Recognition</li>
 </ul>
 
 
