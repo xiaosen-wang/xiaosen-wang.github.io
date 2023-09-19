@@ -50,6 +50,11 @@
 
                     // Display the HTML content on the page
                     document.getElementById('readme-content').innerHTML = htmlContent;
+                    
+                    const links = document.querySelectorAll('a');
+                    links.forEach(link => {
+                        link.setAttribute('target', '_blank');
+                    });
                 })
                 .catch(error => {
                     console.error(error);
