@@ -8,9 +8,10 @@ table#tlayout {
 
 body {
 	background: white;
-	font-family: Georgia, serif;
+	font-family: "Times New Roman", Times, serif;
 	padding-bottom: 8px;
 	margin: 10;
+	font-size: 1.2em;
 }
 
 #layout-menu {
