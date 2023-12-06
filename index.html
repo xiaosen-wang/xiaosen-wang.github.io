@@ -61,7 +61,21 @@
   }
 
   .textdefense {
-    background-color: #F1C60F;
+    background-color: #b07cc693;
+    color: white;
+    padding: 3px;
+    border-radius: 8px;
+  }
+  
+  .multimodalattack {
+    background-color: #f3c809;
+    color: white;
+    padding: 3px;
+    border-radius: 8px;
+  }
+
+  .multimodaldefense {
+    background-color: rgba(248, 203, 2, 0.664);
     color: white;
     padding: 3px;
     border-radius: 8px;
@@ -591,13 +605,36 @@
       <strong>Xiaosen Wang</strong>, Zeyuan Yin <br /> 
        arXiv preprint arXiv:2311.17087, 2023 <br />
       <a href="https://arxiv.org/abs/2311.17087" target="_blank" rel="noopener noreferrer">[arXiv]</a>
-      <button onclick="toggleContent('BSR')" class="btn">[BibTex]</button>
-      <div id="BSR" class="content" style="display: none;">
+      <button onclick="toggleContent('MIST')" class="btn">[BibTex]</button>
+      <div id="MIST" class="content" style="display: none;">
         <p class="shadow-block">
           @article{wang2023rethinkingb,<br />
             &nbsp&nbsp&nbsp&nbsp title={{Rethinking Mixup for Improving the Adversarial Transferability}},<br />
             &nbsp&nbsp&nbsp&nbsp author={Xiaosen Wang and Zeyuan Yin},<br />
             &nbsp&nbsp&nbsp&nbsp journal={arXiv preprint arXiv:2311.17087},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2023}<br />
+          }
+        </p>
+      </div>
+    </p>
+  </div>
+</div>
+
+<div class="media">
+  <div class="media-body">
+    <p class="media-heading">
+      <strong> MMA-Diffusion: MultiModal Attack on Diffusion Models
+      </strong> <span class="multimodalattack">Multi-Modal Attack</span> <br />
+      Yijun Yang, Ruiyuan Gao, <strong>Xiaosen Wang</strong>, Nan Xu, Qiang Xu <br /> 
+       arXiv preprint arXiv:2311.17516, 2023 <br />
+      <a href="https://arxiv.org/abs/2311.17516" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      <button onclick="toggleContent('MMA')" class="btn">[BibTex]</button>
+      <div id="MMA" class="content" style="display: none;">
+        <p class="shadow-block">
+          @article{yang2023mma,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{MMA-Diffusion: MultiModal Attack on Diffusion Models}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Yijun Yang and Ruiyuan Gao and Xiaosen Wang and Nan Xu and Qiang Xu},<br />
+            &nbsp&nbsp&nbsp&nbsp journal={arXiv preprint arXiv:2311.17516},<br />
             &nbsp&nbsp&nbsp&nbsp year={2023}<br />
           }
         </p>
