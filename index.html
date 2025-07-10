@@ -47,7 +47,7 @@
   }
 
   .imagedefense {
-    background-color: #3498D8;
+    background-color: #2ecc70a1;
     color: white;
     padding: 3px;
     border-radius: 8px;
@@ -76,6 +76,20 @@
 
   .multimodaldefense {
     background-color: rgba(248, 203, 2, 0.664);
+    color: white;
+    padding: 3px;
+    border-radius: 8px;
+  }
+
+  .llmattack {
+    background-color: #096ef3;
+    color: white;
+    padding: 3px;
+    border-radius: 8px;
+  }
+
+  .llmdefense {
+    background-color: rgba(2, 117, 248, 0.329);
     color: white;
     padding: 3px;
     border-radius: 8px;
@@ -143,6 +157,7 @@
 </h2>
 
 <ul style="height:325px;overflow-y:scroll">
+  <li>01/07/2024 - Two papers were accepted by <a href="https://iccv.thecvf.com/Conferences/2026" target="_blank" rel="noopener noreferrer">ICCV 2025</a>.</li>
   <li>01/07/2024 - One paper was accepted by <a href="https://eccv2024.ecva.net/" target="_blank" rel="noopener noreferrer">ECCV 2024</a>.</li>
   <li>27/02/2024 - Two papers were accepted by <a href="https://cvpr.thecvf.com/" target="_blank" rel="noopener noreferrer">CVPR 2024</a>.</li>
   <li>12/17/2023 - We have released a transfer-based attack framework: <a href="https://github.com/Trustworthy-AI-Group/TransferAttack" target="_blank" rel="noopener noreferrer">TransferAttack</a>.</li>
@@ -189,6 +204,51 @@
 <div class="media">
   <div class="media-body">
     <p class="media-heading">
+      <strong> ViT-EnsembleAttack: Augmenting Ensemble Models for Stronger Adversarial Transferability in Vision Transformers
+      </strong> <span class="imageattack">LLM Attack</span> <br />
+      Hanwen Cao, Haobo Lu, Xiaosen Wang, Kun He <br /> 
+      IEEE/CVF International Conference on Computer Vision (<strong>ICCV</strong>), 2025 <br />
+      <button onclick="toggleContent('VEA')" class="btn">[BibTex]</button>
+      <div id="VEA" class="content" style="display: none;">
+        <p class="shadow-block">
+          @inproceedings{cao2025ViT,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{ViT-EnsembleAttack: Augmenting Ensemble Models for Stronger Adversarial Transferability in Vision Transformers}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Hanwen Cao and Haobo Lu and Xiaosen Wang and Kun He},<br />
+            &nbsp&nbsp&nbsp&nbsp journal={Proceedings of the IEEE/CVF International Conference on Computer Vision},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2025}<br />
+          }
+        </p>
+      </div>
+    </p>
+  </div>
+</div>
+
+<div class="media">
+  <div class="media-body">
+    <p class="media-heading">
+      <strong> IDEATOR: Jailbreaking Large Vision-Language Models Using Themselves
+      </strong> <span class="llmattack">LLM Attack</span> <br />
+      Ruofan Wang, Juncheng Li, Yixu Wang, Bo Wang, <strong>Xiaosen Wang</strong>, Yan Teng, Yingchun Wang, Xingjun Ma, Yu-Gang Jiang <br /> 
+      IEEE/CVF International Conference on Computer Vision (<strong>ICCV</strong>), 2025 <br />
+      <a href="https://arxiv.org/abs/2411.00827" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      <button onclick="toggleContent('IDEATOR')" class="btn">[BibTex]</button>
+      <div id="IDEATOR" class="content" style="display: none;">
+        <p class="shadow-block">
+          @inproceedings{wang2025IDEATOR,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{IDEATOR: Jailbreaking Large Vision-Language Models Using Themselves}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Ruofan Wang and Juncheng Li and Yixu Wang and Bo Wang and Xiaosen Wang and Yan Teng and Yingchun Wang and Xingjun Ma and Yu-Gang Jiang},<br />
+            &nbsp&nbsp&nbsp&nbsp journal={Proceedings of the IEEE/CVF International Conference on Computer Vision},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2025}<br />
+          }
+        </p>
+      </div>
+    </p>
+  </div>
+</div>
+
+<div class="media">
+  <div class="media-body">
+    <p class="media-heading">
       <strong> Bag of Tricks to Boost Adversarial Transferability
       </strong> <span class="imageattack">Image Attack</span> <br />
       Zeliang Zhang, Rongyi Zhu, Wei Yao, <strong>Xiaosen Wang</strong>†, Chenliang Xu <br /> 
@@ -198,7 +258,7 @@
       <button onclick="toggleContent('BAG')" class="btn">[BibTex]</button>
       <div id="BAG" class="content" style="display: none;">
         <p class="shadow-block">
-          @article{zhang2024bag,<br />
+          @inproceedings{zhang2024bag,<br />
             &nbsp&nbsp&nbsp&nbsp title={{Bag of Tricks to Boost Adversarial Transferability}},<br />
             &nbsp&nbsp&nbsp&nbsp author={Zeliang Zhang and Rongyi Zhu and Wei Yao and Xiaosen Wang and Chenliang Xu},<br />
             &nbsp&nbsp&nbsp&nbsp journal={Proceedings of the European Conference on Computer Vision},<br />
@@ -676,6 +736,29 @@
 <h3>
 	<a name='publications'></a> Preprint
 </h3>
+
+<div class="media">
+  <div class="media-body">
+    <p class="media-heading">
+      <strong> Attention! You Vision Language Model Could Be Maliciously Manipulated
+      </strong> <span class="multimodalattack">Multi-Modal Attack</span> <br />
+      <strong>Xiaosen Wang</strong>, Shaokang Wang, Zhijin Ge, Yuyang Luo, Shudong Zhang <br /> 
+       arXiv preprint arXiv:2505.19911, 2025 <br />
+      <a href="https://arxiv.org/abs/2505.19911" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      <button onclick="toggleContent('LI_Boost')" class="btn">[BibTex]</button>
+      <div id="LI_Boost" class="content" style="display: none;">
+        <p class="shadow-block">
+          @article{wang2025attention,<br />
+            &nbsp&nbsp&nbsp&nbsp title={{Attention! You Vision Language Model Could Be Maliciously Manipulated}},<br />
+            &nbsp&nbsp&nbsp&nbsp author={Xiaosen Wang and Shaokang Wang and Zhijin Ge and Yuyang Luo and Shudong Zhang},<br />
+            &nbsp&nbsp&nbsp&nbsp journal={arXiv preprint arXiv:2505.19911},<br />
+            &nbsp&nbsp&nbsp&nbsp year={2025}<br />
+          }
+        </p>
+      </div>
+    </p>
+  </div>
+</div>
 
 <div class="media">
   <div class="media-body">
